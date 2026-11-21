@@ -1,29 +1,25 @@
 # JanSahayak AI 🇮🇳
 
-**JanSahayak AI** is an AI-powered multilingual citizen assistance platform designed to make government schemes, welfare benefits, and public services more accessible to everyone.
+JanSahayak AI is an AI-powered multilingual citizen assistance platform that empowers people to explain their problems in their preferred language and receive clear, personalized, step-by-step guidance on how to solve them.
 
-The platform helps citizens discover relevant government schemes based on their personal profile, understand eligibility criteria, required documents, benefits, and application procedures. Beyond scheme discovery, JanSahayak AI provides a problem-focused AI assistant that guides users through real-life issues and suggests practical next steps using accessible, easy-to-understand language.
+Users can describe real-life issues they are facing, and the AI assistant helps them understand what to do next, which government services or departments may help, what documents they need, where to apply, and what steps to follow. The platform also enables citizens to explore government schemes, check their eligibility, and discover benefits they may be entitled to but unaware of.
 
-### ✨ Features
-- 🌐 Multilingual support
-- 🤖 AI-powered citizen assistance
-- 🎯 Personalized government scheme recommendations
-- 📋 Eligibility assessment
-- 📄 Required documents and application guidance
-- 🔍 Scheme search and filtering
-- 💬 AI-powered problem-solving assistant
-- 🇮🇳 Designed for Indian citizens
-- 📱 User-friendly and accessible interface
+### Key Features
+- 🤖 **Problem-to-Solution AI Assistant** – Users describe their problems in natural language and receive actionable, step-by-step guidance.
+- 🪜 **Step-by-Step Action Plans** – Clear instructions on what to do, where to go, which documents to prepare, and how to proceed.
+- 🎯 **Eligibility Checker** – Helps users understand their eligibility for government schemes based on their profile.
+- 🔍 **Scheme Discovery** – Explore relevant central and state government schemes based on personal circumstances.
+- 🌐 **Multilingual Support** – Designed to make government information accessible in multiple Indian languages.
+- 📋 **Personalized Assistance** – Recommendations tailored to the user's location, occupation, income, education, and other relevant details.
+- 📄 **Document Guidance** – Understand the documents and requirements needed for different services and applications.
 
-### 🎯 Mission
-To bridge the gap between citizens and government welfare services by making information easier to find, understand, and act upon.
+### Mission
+To transform complex government information into simple, understandable, and actionable guidance so that every citizen knows what support is available and exactly what to do next.
 
-### 🛠️ Tech Stack
-- Frontend: React, TypeScript, Vite
-- UI: Tailwind CSS
-- Backend & Database: Supabase
-- AI: Gemini API
-- Authentication: Supabase Auth
+### Tech Stack
+React • TypeScript • Vite • Tailwind CSS • Supabase • Gemini AI
 
-### 🚀 Vision
-A single digital platform where citizens can explain their problems in their preferred language and receive reliable information, relevant government schemes, and clear guidance on what to do next.
+### Vision
+A platform where people don't have to search through countless government websites or struggle to understand complicated procedures. They simply explain their problem, and JanSahayak AI guides them toward the right solution.
+
+**Discover schemes. Check eligibility. Explain your problem. Get the next steps.**
