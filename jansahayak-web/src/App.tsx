@@ -10,6 +10,8 @@ import Ask from './pages/Ask'
 import Login from './pages/Login'
 import Register from './pages/Register'
 import Profile from './pages/Profile'
+import Eligibility from './pages/Eligibility'
+import { HowItWorks, About, Contact } from './pages/StaticPages'
 import { AuthProvider } from './auth/AuthContext'
 import { getSavedLanguage } from './i18n'
 
@@ -27,9 +29,9 @@ export default function App() {
             <Route path="/" element={<Home />} />
             <Route path="/schemes" element={<Schemes />} />
             <Route path="/schemes/:slug" element={<SchemeDetail />} />
-            <Route path="/how-it-works" element={<Placeholder titleKey="nav.how" />} />
-            <Route path="/about" element={<Placeholder titleKey="nav.about" />} />
-            <Route path="/contact" element={<Placeholder titleKey="nav.contact" />} />
+            <Route path="/how-it-works" element={<HowItWorks />} />
+            <Route path="/about" element={<About />} />
+            <Route path="/contact" element={<Contact />} />
             <Route path="/privacy" element={<Placeholder titleKey="footer.privacy" />} />
             <Route path="/terms" element={<Placeholder titleKey="footer.terms" />} />
             <Route path="/login" element={<Login />} />
@@ -37,6 +39,7 @@ export default function App() {
             <Route element={<RequireAuth />}>
               <Route path="/profile" element={<Profile />} />
               <Route path="/ask" element={<Ask />} />
+              <Route path="/schemes/:slug/eligibility" element={<Eligibility />} />
             </Route>
           </Route>
           <Route path="*" element={<Navigate to="/" replace />} />

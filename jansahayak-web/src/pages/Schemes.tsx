@@ -230,24 +230,31 @@ export default function Schemes() {
             These results use the rules stored for each scheme and your profile. They are not an official decision.
           </p>
           <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
-            {mine.map((m) => (
-              <SchemeCard
-                key={m.scheme.id}
-                eligibility={m.category}
-                s={{
-                  id: m.scheme.id,
-                  scheme_name: m.scheme.name,
-                  scheme_slug: m.scheme.slug,
-                  department: m.scheme.department,
-                  description: null,
-                  benefits: m.scheme.benefits,
-                  category: m.scheme.category,
-                  government_level: m.scheme.government_level,
-                  state: m.scheme.state,
-                  official_url: m.scheme.official_url,
-                  verification_status: m.scheme.verification_status,
-                }}
-              />
+                        {mine.map((m) => (
+              <div key={m.scheme.id} className="flex flex-col gap-2">
+                <SchemeCard
+                  eligibility={m.category}
+                  s={{
+                    id: m.scheme.id,
+                    scheme_name: m.scheme.name,
+                    scheme_slug: m.scheme.slug,
+                    department: m.scheme.department,
+                    description: null,
+                    benefits: m.scheme.benefits,
+                    category: m.scheme.category,
+                    government_level: m.scheme.government_level,
+                    state: m.scheme.state,
+                    official_url: m.scheme.official_url,
+                    verification_status: m.scheme.verification_status,
+                  }}
+                />
+                <Link
+                  to={`/schemes/${m.scheme.slug}/eligibility`}
+                  className="text-sm font-medium text-navy-700 underline"
+                >
+                  See eligibility details and next steps
+                </Link>
+              </div>
             ))}
           </div>
         </div>
